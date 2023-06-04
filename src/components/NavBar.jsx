@@ -6,16 +6,16 @@ const NavBar = () => {
   return (
     <AppBar component="nav"  sx={{
         position: "sticky",
-        background: theme.palette.background.default,
+        background: theme.palette.background.nav,
         boxShadow: "none",
         zIndex:"999"
     }}>
         <Box
         width="100%"
-        p="1.2rem 1.2rem"
+        p="1.4rem 1.4rem"
         sx={{ borderBottom: 1 }}
         >
-        <Typography variant='h2' color="black">Demande a traiter</Typography>
+        <Typography variant='h2' color="white">Demande a traiter</Typography>
     </Box>
         
     </AppBar>

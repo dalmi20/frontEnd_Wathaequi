@@ -8,6 +8,7 @@ import {BrowserRouter, Navigate, Route, Routes} from 'react-router-dom'
 import Layout from 'scenes/layout';
 import Dashboard from 'scenes/dashboard';
 import TraiterDemande from 'scenes/traiterDemande';
+import DemandeDetails from 'scenes/demandeDetails';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
               <Route path='/' element={<Navigate to="/citizenmanagement" replace/>}/>
               <Route path='/citizenmanagement' element={<Dashboard/>}/>
               <Route path='/traiterdemande' element={<TraiterDemande/>}/>
+              <Route path='/traiterdemande/details' element={<DemandeDetails/>}/>
               </Route>
             </Routes>
           </CssBaseline>
