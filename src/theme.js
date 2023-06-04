@@ -41,7 +41,7 @@ export const tokensDark = {
       800: "#665429",
       900: "#332a14",
       1000: "#0D2426",
-      1100: "#3B8A7F"
+      1100: "#3F707F"
     },
     
   };
@@ -99,7 +99,7 @@ export const tokensDark = {
               },
               secondary: {
                 ...tokensLight.secondary,
-                main: tokensDark.secondary[600],
+                main: tokensDark.secondary[1100],
                 light: tokensDark.secondary[700],
                 fontCol: tokensDark.secondary[1000],
                 selec: tokensDark.secondary[1100]
@@ -109,7 +109,8 @@ export const tokensDark = {
                 main: tokensDark.grey[500],
               },
               background: {
-                default: "#D3E2E7",
+                default: "#EBEAE8",
+                nav: "#04252E",
                 alt: tokensDark.grey[0],
               },
             }),

@@ -29,11 +29,15 @@ const secondNav = [
 ]
 
 
+
+
+
 const Sidebar = ({
     drawerWidth,
     isSidebarOpen,
     setIsSidebarOpen,
-    isNonMobile
+    isNonMobile,
+    isAdmin
 }) => {
     const {pathname} = useLocation();
     const [active,setActive] = useState("")
@@ -63,7 +67,8 @@ const Sidebar = ({
             }
         }}
         >
-            <Box width="100%">
+            {isAdmin && (
+                <Box width="100%">
                 <Box color={theme.palette.secondary.main} m="1.5rem 2.rem 2rem 3rem">
                         <Box display="flex" justifyContent="center" alignItems="center" marginTop="1.5rem" gap="0.5rem">
                             <Box
@@ -176,7 +181,7 @@ const Sidebar = ({
                         </List>
                 </Box>
             </Box>
-
+            )}
         </Drawer>
     )}
   </Box>

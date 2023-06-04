@@ -17,6 +17,7 @@ const Layout = () => {
         drawerWidth="250px"
         isSidebarOpen={isSidebarOpen}
         setIsSidebarOpen={setIsSidebarOpen}
+        isAdmin={true}
         />
         <Box
         width="100%"
